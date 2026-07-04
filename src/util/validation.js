@@ -13,3 +13,7 @@ export function hasMinLength(value, minLength) {
 export function isEqualToOtherValue(value, otherValue) {
   return value === otherValue;
 }
+
+export function isPasswordValid(value) {
+  return hasMinLength(value, 6);
+}
